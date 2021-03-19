@@ -11,13 +11,20 @@ end
 
 my_str = ARGV[0].split('')
 
+resultat = ' '
+indice_majuscule = 0
 i = 0
-while ( i < my_str.length)
-  if (i % 2 == 0)
-    print my_str[i].downcase
+while (i < my_str.length)
+  if (my_str[i] != ' ')
+    if (indice_majuscule % 2 == 0)
+      resultat += my_str[i].downcase
+    else
+      resultat += my_str[i].upcase
+    end
+    indice_majuscule += 1
   else
-    print my_str[i].upcase
+    resultat += ' '
   end
   i += 1
 end
-print "\n"
+puts resultat
