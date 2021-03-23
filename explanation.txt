@@ -1,0 +1,22 @@
+tester tous les chiffres jusqu'à ce qu'on ai le bon après => brut force
+brut force = pour chaque cellule vide on va générer une grille et vérifier que cette grille est valable
+backtract, si column ligne carré sont bons je passe
+économiser le fait d'avoir un tableau qui donne nombre restant pour l, c, t
+toujours traduire algo de façon clair avec français sinon je ne pourrai pas faire le code
+
+raisonnement =
+1) passer en revu ligne,
+2) tester les chiffres 1..9 les possibilités sur cellule vide
+
+code =
+1) boucle line, chaque élément de l, e ? (est ce que) c'est un underscore
+2) tester chiffre 1 à 9
+3) si ligne, carré, column sont bons : passer au suivant sinon erreur
+4) fonctions qui vérifie toutes les columns f(9) exemple
+check_sudoku, squelette de ce que serait la solution, fonction solve sudoku, si != false, soit renvoie sudoku, soit false puts error sinon print sudoku
+
+bout de code qui permet de récupérer le fichier sudoku.txt pour le mettre dans une variable
+
+Il faut avancer au fur et à mesure
+
+clone passe en référence son tableau; dans l'espace mémoire il va au même endroit
